@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SmartPhones[] smartPhones = {new Android(), new IPhone()};
+        for (SmartPhones phones : smartPhones){
+            phones.call();
+            phones.sms();
+            phones.internet();
+        }
+
+
     }
 }
